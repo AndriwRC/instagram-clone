@@ -1,7 +1,10 @@
 :root {
-    --primary-color: gray;
+    --primary-color: #fafafa;
+    --primary-color-dark: #dbdbdb;
     --facebook-color: #385194;
     --facebook-color-light: #209af7;
+    --font-light: #8e8e8e;
+    --button-color: #afdcf9;
 }
 * {
     padding: 0;
@@ -12,18 +15,22 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
+body {
+    background-color: var(--primary-color);
+}
 .main--login {
     margin: 20px auto;
     width: 90%;
     min-width: 320px;
 }
 .main--login .main--title {
-    margin-bottom: 20px;
+    margin-top: 45px;
+    margin-bottom: 35px;
     text-align: center;
 
 }
-.main--login .main--title h1 {
-    font-size: 3.4rem;
+.main--login .main--title img {
+    
 }
 .login--form {
     width: 90%;
@@ -33,16 +40,28 @@ html {
     display: block;
     width: 83%;
     max-width: 270px;
+    height: 38px;
     padding: 10px;
-    margin: 10px auto;
+    margin: 6px auto;
     border-radius: 2px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color-dark);
+    color: var(--font-light);
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
 }
 .login--form .form--button {
     display: block;
-    padding: 10px;
+    padding: 7px;
     margin: 0 auto;
-    width: 80px;
+    margin-top: 15px;
+    width: 83%;
+    max-width: 270px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 4px;
+    color: white;
 }
 .divisor {
     display: flex;
@@ -54,7 +73,7 @@ html {
 .divisor div {
     width: 45%;
     height: 1px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
 }
 
 /* Links */
