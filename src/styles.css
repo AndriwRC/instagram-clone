@@ -18,6 +18,12 @@ html {
 body {
     background-color: var(--primary-color);
 }
+ul {
+    list-style-type:  none;
+}
+a {
+    text-decoration: none;
+}
 .main--login {
     margin: 20px auto;
     width: 90%;
@@ -28,9 +34,6 @@ body {
     margin-bottom: 35px;
     text-align: center;
 
-}
-.main--login .main--title img {
-    
 }
 .login--form {
     width: 90%;
@@ -82,12 +85,7 @@ body {
 }
 
 /* Links */
-.login--links {
-    display: none;
-}
-footer {
-    display: none;
-}
+
 .login--alternative {
     margin-top: 20px;
 }
@@ -96,7 +94,6 @@ footer {
     margin: 22px 0;
     text-align: center;
     font-size: 1.4rem;
-    text-decoration: none;
     color: var(--facebook-color);
 }
 .alternative--link .facebook-icon {
@@ -125,6 +122,25 @@ footer {
     font-weight: 700;
     color: var(--facebook-color-light);
 }
-ul {
-    list-style-type:  none;
+.login--links {
+    margin: 40px auto 0;
+    max-width: 320px;
+}
+.login--links .links--paragraph {
+    text-align: center;
+    font-size: 1.4rem;
+}
+.login--links .links--list {
+    display: flex;
+    margin: 20px auto 0;
+    width: 90%;
+    justify-content: space-around;
+}
+.login--links .links--list img {
+    width: 136px;
+    height: 40px;
+}
+
+footer {
+    display: none;
 }
