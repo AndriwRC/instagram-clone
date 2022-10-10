@@ -1,0 +1,88 @@
+:root {
+    --primary-color: gray;
+    --facebook-color: #385194;
+    --facebook-color-light: #209af7;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.main--login {
+    margin: 20px auto;
+    width: 90%;
+    min-width: 320px;
+}
+.main--login .main--title {
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.main--login .main--title h1 {
+    font-size: 3.4rem;
+}
+.login--form {
+    width: 90%;
+    margin: 0 auto;
+}
+.login--form .form--input {
+    display: block;
+    width: 83%;
+    max-width: 270px;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 2px;
+    border: 1px solid var(--primary-color);
+}
+.login--form .form--button {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80px;
+}
+.divisor {
+    display: flex;
+    margin: 20px auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.divisor div {
+    width: 45%;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+
+/* Links */
+
+.alternative--link {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--facebook-color);
+}
+.alternative--link__bold {
+    font-weight: 700;
+}
+.alternative--link__small {
+    font-size: 1.4rem;
+}
+.alternative--paragraph {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.alternative--paragraph__bold {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--facebook-color-light);
+}
+ul {
+    list-style-type:  none;
+}
