@@ -230,4 +230,8 @@ footer {
         margin-left: 40px;
         margin-right: 0;
     }
+    footer {
+        max-width: 980px;
+        margin: 0 auto;
+    }
 }
