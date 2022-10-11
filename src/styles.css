@@ -24,6 +24,9 @@ ul {
 a {
     text-decoration: none;
 }
+.main--phone-img {
+    display: none;
+}
 .main--login {
     margin: 20px auto;
     width: 90%;
@@ -140,7 +143,91 @@ a {
     width: 136px;
     height: 40px;
 }
-
 footer {
-    display: none;
+    margin-top: 60px;
+}
+.footer--list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+}
+.footer--list li {
+    font-size: 1.2rem;
+    margin: 5px 6px;
+}
+.footer--list li a {
+    color: var(--font-light);
+}
+.footer--brand {
+    display: flex;
+    width: 90%;
+    max-width: 320px;
+    justify-content: space-evenly;
+    margin: 15px auto 55px;
+}
+.footer--brand li {
+    font-size: 1.2rem;
+    color: var(--font-light);
+}
+.footer--brand li span {
+    display: inline-block;
+    background-image: url('./assets/icons/down-sign.svg');
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 450px) {
+    .main--login {
+        margin-top: 45px;
+        max-width: 348px;
+        padding-bottom: 15px;
+        border-radius: 2px;
+        border: 1px solid var(--primary-color-dark);
+        background-color: white;
+    }
+}
+
+@media (min-width: 875px) {
+    main {
+        display: flex;
+        justify-content: center;
+        max-width: 935px;
+        margin: 0 auto;
+    }
+    .main--phone-img {
+        display: block;
+        width: 380px;
+    }
+    .main--phone-img .phone-img--background {
+        position: relative;
+        width: 380px;
+        height: 580px;
+        margin-top: 45px;
+        background-image: url('./assets/imgs/phone-background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main--phone-img .phone-img--front-img {
+        position: absolute;
+        top: 20px;
+        right: calc(50vw + 33px);
+        width: 233px;
+        height: 503px;
+        margin-top: 45px;
+        background-image: url('./assets/imgs/profile-pic.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main--login {
+        margin-left: 40px;
+        margin-right: 0;
+    }
 }
