@@ -216,8 +216,8 @@ footer {
     }
     .main--phone-img .phone-img--front-img {
         position: absolute;
-        top: 20px;
-        right: calc(50vw + 33px);
+        top: -24px;
+        right: 28px;
         width: 233px;
         height: 503px;
         margin-top: 45px;
